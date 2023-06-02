@@ -9,7 +9,7 @@ public class ThreadPoolCustom {
     private boolean isStopped;
 
     public ThreadPoolCustom(int allThreadsCount, int allTasksCount) {
-        this.taskQueue = new ArrayBlockingQueue<Runnable>(allTasksCount);
+        this.taskQueue = new ArrayBlockingQueue<>(allTasksCount);
         this.isStopped = false;
 
         for (int i = 0; i < allThreadsCount; ++i) {
