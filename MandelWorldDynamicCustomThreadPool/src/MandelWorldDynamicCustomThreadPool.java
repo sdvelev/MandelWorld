@@ -12,7 +12,7 @@ public class MandelWorldDynamicCustomThreadPool {
 
     protected static int width = 3840, height = 2160;
     protected static double[] dims = {-0.6386,-0.5986,0.4456,0.4686};
-    protected static int threads = 1, tasks = 1, gran = 1, maxIterations = 1024;
+    protected static int threads = 2, tasks = 1, gran = 1, maxIterations = 1024;
     protected static int[][] pixels = new int[width][height];
     protected static String pathName = "MandelWorldDynamicCustomThreadPool.png";
     protected static boolean quiet = false, byCols = false;
@@ -29,7 +29,7 @@ public class MandelWorldDynamicCustomThreadPool {
         Options opt = new Options();
         opt.addOption("s", "size", true, "size of image (default: 3840x2160)");
         opt.addOption("r", "rect", true, "dimensions of area in the complex plane (-0.6386:-0.5986:0.4456:0.4686)");
-        opt.addOption("t", "threads", true, "number of threads (default: 1)");
+        opt.addOption("t", "threads", true, "number of threads (default: 2)");
         opt.addOption("o", "out", true, "output path name (MandelWorldDynamicCustomThreadPool.png)");
         opt.addOption("q", "quiet", false, "quiet mode (default: false)");
         opt.addOption("h", "help", false, "information about arguments (default: false)");

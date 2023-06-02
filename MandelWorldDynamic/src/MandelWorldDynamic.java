@@ -14,7 +14,7 @@ public class MandelWorldDynamic {
     static int WIDTH = 3840, HEIGHT = 2160, MAX_ITERATIONS = 1024;
     static double RE_START_POINT = -0.6386, RE_END_POINT = -0.5986, IM_START_POINT = 0.4456, IM_END_POINT = 0.4686;
     static byte[][] indexes;
-    static int numThreads = 1, granularity = 1, rows, rowWidth;
+    static int numThreads = 2, granularity = 1, rows, rowWidth;
     static String imageName = "MandelWorldDynamic.png";
 
     protected static long getTimeInMillis() {
@@ -23,10 +23,9 @@ public class MandelWorldDynamic {
 
     static void insertOptions(String[] args) {
         Options options = new Options();
-        options.addOption("r", "rect", true,
-            "dimension of area in the complex plane (default: -0.6386:-0.5986:0.4456:0.4686)");
-        options.addOption("t", "threads", true, "number of threads (default: 1)");
-        options.addOption("o", "out", true, "outputh path name (default: MandelWorldDynamic.png)");
+        options.addOption("r", "rect", true, "dimension of area in the complex plane (default: -0.6386:-0.5986:0.4456:0.4686)");
+        options.addOption("t", "threads", true, "number of threads (default: 2)");
+        options.addOption("o", "out", true, "output path name (default: MandelWorldDynamic.png)");
         options.addOption("s", "size", true, "size of image (default: 3840x2160)");
         options.addOption("h", "help", false, "information about arguments (default: false)");
         options.addOption("g", "granularity", true, "granularity (how many tasks per thread) (default: 1)");
