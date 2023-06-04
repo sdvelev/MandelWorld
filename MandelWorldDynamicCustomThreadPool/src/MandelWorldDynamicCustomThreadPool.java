@@ -217,6 +217,6 @@ public class MandelWorldDynamicCustomThreadPool {
             e.printStackTrace();
         }
 
-        System.out.println("Total execution time is " + (endTime - startTime) + "ms.\n");
+        System.out.println("Total execution time is " + (endTime - startTime) + "ms.");
     }
 }
