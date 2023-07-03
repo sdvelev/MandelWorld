@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MandelWorld.iml" filepath="$PROJECT_DIR$/.idea/MandelWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MandelWorldDynamic/MandelWorldDynamic.iml" filepath="$PROJECT_DIR$/MandelWorldDynamic/MandelWorldDynamic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MandelWorldDynamicCustomThreadPool/MandelWorldDynamicCustomThreadPool.iml" filepath="$PROJECT_DIR$/MandelWorldDynamicCustomThreadPool/MandelWorldDynamicCustomThreadPool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MandelWorldStatic/MandelWorldStatic.iml" filepath="$PROJECT_DIR$/MandelWorldStatic/MandelWorldStatic.iml" />
+    </modules>
+  </component>
+</project>
